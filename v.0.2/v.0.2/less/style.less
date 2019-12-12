@@ -1,0 +1,143 @@
+html {
+    font-size: 10px;
+}
+// Настройка при наведении на ссылки. 
+a:hover {
+    text-decoration: none;
+}
+// Настройка кнопок.
+.button {
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+    transition: 0.5s;
+    // При наведении на кнопку.
+    &:hover {
+        cursor: pointer;
+        background-color: darken(orange, 5%);
+    }
+}
+
+// Окно основоного контента первого онка.
+.main {
+    padding: 1.5rem 0;
+    // Содержимое контента первого окна.
+    &-content {
+        margin-top: 10rem;
+        // Заголовок первого окна.
+        h1 {
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.45;
+        }
+    }
+    // Подзаголовок первого окна.
+    &-subtitle {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    // Скидка 10%.
+    span {
+        margin-top: 3rem;
+        display: inline-block;
+        padding: 3rem 5rem;
+        background-color: orange;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        color: white;
+        text-align: center;
+        // Выделение текста "10%"
+        strong {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+    }
+    // Окно формы первого онка.
+    &-form {
+        padding: 3rem 5rem;
+        text-align: center;
+        border: 5px solid orange;
+        border-radius: 25px;
+        // Заголовок формы первого окна.
+        &-header {
+            font-size: 1.8rem;
+            margin-bottom: 4rem;
+        }
+        // Поля ввода формы первого окна.
+        &-input {
+            display: block;
+            margin: 2rem 0;
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid gray;
+            // Обводка в фокусировоном окне ввода.
+            &-focus:focus {
+                outline: none;
+                border: 1px solid orange;
+            }
+        }
+        // Лейблы окон ввода.
+        label {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 0.5rem;
+            background-color: white;
+        }
+        // Настройка кнопки в форме.
+        &-btn {
+            display: block;
+            width: 100%;
+            height: 5rem;
+            font-size: 1.3rem;
+        }
+    }
+}
+// Ссылка номера телефона первого окна.
+.phone-link {
+    display: block;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 17px;
+    height: 7rem;
+    line-height: 7rem;
+    right: 100%;
+}
+// Настройка кнопки "Получить консультацию"
+.wrap {
+    display: table;
+    width: 100%;
+    height: 7rem;
+    &-block {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 991px) {
+    .phone-link {
+        text-align: right;
+    }
+
+    .main-content {
+        margin-top: 3rem;
+    }
+
+    .main-title {
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .header, .phone-link {
+        text-align: center;
+    }
+}
