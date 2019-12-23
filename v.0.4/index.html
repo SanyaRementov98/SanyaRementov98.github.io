@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="main">
+    <div class="container">
+        <div class="header">
+            <div class="row">
+                <!-- Лого -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Ателье в Красково" width="225px">
+                    </div>
+                </div>
+                <!-- Телефон -->
+                <div class="col-lg-2 col-lg-offset-4 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-0 col-xs-12">
+                    <a class="phone-link" href="#">+0 000 000 00 00</a>
+                </div>
+                <!-- Кнопка -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap">
+                        <div class="wrap-block">
+                            <button class="button btn-header window-btn">
+                                получить консультацию
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="row">
+                <!-- Заголовок и подзаголовок -->
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="main-title">
+                        <h1>Ателье по ремонту одежды, обуви и сумок.</h1>
+                        <p class="main-subtitle">- Ваш силуэт создаётся здесь.</p>
+                        <span>
+                            При заказе с сайта <br>
+                            скидка <strong>10%</strong> на усглугу
+                        </span>
+                    </div>
+                </div>
+                <!-- Форма -->
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
+                    <div class="main-form">
+                        <h2 class="main-form-header">Оставьте заявку</h2>
+                        <form action="#">
+                            <label for="#">Ваше имя</label>
+                            <input class="main-form-input main-form-input-focus" type="text">
+                            <label for="#">Ваш E-Mail</label>
+                            <input class="main-form-input main-form-input-focus" type="text">
+                            <label for="#">Номер телефона</label>
+                            <input class="main-form-input main-form-input-focus" type="text">
+                            <button class="main-form-btn button" type="submit">Заявка</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<section class="features">
+    <div class="container">
+        <h2 class="section-header">Преимущества работы с нами</h2 c>
+    </div>
+    <div class="features-slider">
+        <div class="features-block">
+            <div class="features-img">
+                <picture>
+                    <source srcset="img/features/garant.svg" type="image/">
+                    <img src="img/features/garant.png" alt="Гарантия на все работы">
+                </picture>
+            </div>
+            <h3>Гарантия на все работы</h3>
+            <p>Мы уверены в высоком качестве товара и наших сотрудников.</p>
+        </div>
+        <div class="features-block">
+            <div class="features-img">
+                <picture>
+                    <source srcset="img/features/remont.svg" type="image/">
+                    <img src="img/features/remont.png" alt="Ремонт и пошив одежды">
+                </picture>
+            </div>
+            <h3>Ремонт и пошив одежды</h3>
+            <p>Мы предлагаем Вам ремонт любых видов одежды - пальто, плащи, куртки,
+            платья, костюмы, брюки, юбки. <br> В общем практически любую для взрослых и детей.
+            Зачем избавляться от любимой куртки если на Вашей всего лишь поломалась "молния"?</p>
+        </div>
+        <div class="features-block">
+            <div class="features-img">
+                <picture>
+                    <source srcset="img/features/koja.svg" type="image/">
+                    <img src="img/features/koja.png" alt="Работаем с кожей и мехом">
+                </picture>
+            </div>
+            <h3>Работаем с кожей и мехом</h3>
+            <p>Наще оборудование позволяет шить не только ткань, но так-же <br>
+            кожу и мех. Поэтому, если понадобится например ушить шубу - обращайтесь мы поможем.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Модальное окно (Получить консультацию) -->
+<div class="window">
+    <div class="window-dialog">
+        <div class="window-content">
+            <button class="window-close">
+                &times;
+            </button>
+            <h4 class="window-header">
+                Заинтересовало?
+            </h4>
+            <p>Оставьте свои контактные данные <br>для связи.</p>
+            <div class="main-form">
+                <form action="#">
+                    <label for="#">Ваше имя</label>
+                    <input class="main-form-input main-form-input-focus" type="text">
+                    <label for="#">Номер телефона</label>
+                    <input class="main-form-input main-form-input-focus" type="text">
+                    <label for="#">Ваш E-Mail</label>
+                    <input class="main-form-input main-form-input-focus" type="text">
+                    <label for="#">Сообщение</label>
+                    <textarea class="main-form-input" rows="5"></textarea>
+                    <button class="main-form-btn button" type="submit">Оставьте заявку</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="slick/slick.css">
+<link rel="stylesheet" href="slick/slick-theme.css">
+<script src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.window-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.window').fadeIn();
+        });
+        $('.window-close').on('click', function(event) {
+            event.preventDefault();
+            $('.window').fadeOut();
+        });
+    $('.features-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        // prevArrow: '<button class="prev"></button>',
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }
+  ]
+  });
+});
+</script>
+</body>
+</html>
